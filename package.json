@@ -4,8 +4,26 @@
   "description": "Node Blog",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "James Levine",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameslevine/Nodejs-Blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jameslevine/Nodejs-Blog/issues"
+  },
+  "homepage": "https://github.com/jameslevine/Nodejs-Blog#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-edge": "^1.0.0",
+    "express-fileupload": "^1.1.1-alpha.3",
+    "mongoose": "^5.4.16"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
 }

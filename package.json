@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node index.js"
   },
+  "engines": {
+    "node": "10.14.1"
+  },
   "author": "James Levine",
   "license": "ISC",
   "repository": {

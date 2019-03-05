@@ -23,8 +23,9 @@ const logoutController = require('./controllers/logout')
 
 const app = new express()
 
-const mongooseConnect = mongoose.connect(`mongodb://localhost/${process.env.DB_URI}`, (error, result) => {
-  console.log(error in errors);
+mongoose.connect(`mongodb://localhost/${process.env.DB_URI}`, (error, result) => {
+
+  console.log('9999999' + error in errors);
 })
 
 app.use(connectFlash())

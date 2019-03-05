@@ -72,6 +72,6 @@ app.post('/users/register', redirectIfAuthenticated, storeUserController)
 app.post('/users/login', redirectIfAuthenticated, loginUserController)
 app.use((req, res) => res.render('not-found'))
 
-app.listen(process.env.PORT, () => {
+app.listen((process.env.PORT || 4000), () => {
   console.log(`App listing on port ${process.env.PORT}`)
 })

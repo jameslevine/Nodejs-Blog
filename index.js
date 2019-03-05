@@ -23,7 +23,7 @@ const logoutController = require('./controllers/logout')
 
 const app = new express()
 
-mongoose.connect(`mongodb+srv://jameslevine-01:<password>@cluster0-u1non.mongodb.net/test?retryWrites=true`)
+mongoose.connect('process.env.MONGO_URI')
 
 app.use(connectFlash())
 
